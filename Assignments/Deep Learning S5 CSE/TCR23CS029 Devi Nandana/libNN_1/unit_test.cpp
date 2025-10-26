@@ -22,9 +22,6 @@ int main()
 
     // Create a list of datasets
     std::list<Dataset> datasets = {
-        // {{4, 10, 16}, {22, 28, 34}},
-        // {{1, 2, 3}, {6, 8, 10}},
-        // {{5, 7, 9}, {15, 21, 27}}
         // arithematic progression
         {{2, 4, 6}, {8, 10, 12}},
         {{3, 6, 9}, {12, 15, 18}},

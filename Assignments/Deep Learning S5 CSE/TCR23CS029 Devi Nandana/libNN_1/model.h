@@ -115,14 +115,7 @@ public:
 
     // Connections (3 inputs → 4 hidden → 3 output)
     // Input to hidden
-    // for (int i = 0; i < 3; i++)
-    // {
-    //     for (int j = 0; j < 4; j++)
-    //     {
-    //         nn_to_nn c = {0, i, 0, 1, j, 0, 1.0, true};
-    //         _nn.add(c);
-    //     }
-    // }
+
     for (int i = 0; i < 3; i++)
         {
             for (int j = 0; j < 4; j++)
@@ -133,14 +126,7 @@ public:
         }
 
     // Hidden to output
-    // for (int i = 0; i < 4; i++)
-    // {
-    //     for (int j = 0; j < 3; j++)
-    //     {
-    //         nn_to_nn c = {1, i, 0, 2, j, 0, 1.0, true};
-    //         _nn.add(c);
-    //     }
-    // }
+
     for (int i = 0; i < 4; i++)
         {
             for (int j = 0; j < 3; j++)
@@ -151,11 +137,7 @@ public:
         }
 
     // Outputs
-    // for (int i = 0; i < 3; i++)
-    // {
-    //     nn_to_op o = {2, i, 0, 1.0, false};
-    //     _nn.add(o);
-    // }
+
     for (int i = 0; i < 3; i++)
         {
             nn_to_op o = {2, static_cast<unsigned>(i), 0, 1.0, false};
